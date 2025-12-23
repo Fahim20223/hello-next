@@ -74,7 +74,7 @@ const Stories = () => {
   return (
     <div>
       <Title>Explore Stories of Developers</Title>
-      <div>
+      <div className="mt-5">
         {devStories.map((story) => (
           <StoryCard key={story.id} story={story}></StoryCard>
         ))}
