@@ -22,7 +22,7 @@ const FoodCard = ({ food }) => {
 
         {/* Buttons */}
         <div className="flex gap-3 mt-4">
-          <CardButton></CardButton>
+          <CardButton food={food}></CardButton>
 
           <Link
             href={`/foods/${food.id}`}

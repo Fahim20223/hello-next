@@ -1,3 +1,4 @@
+"use client";
 import React, { createContext, useState } from "react";
 export const CartContext = createContext();
 
@@ -11,7 +12,7 @@ const CartProvider = ({ children }) => {
     addToCart,
     cart,
   };
-  return <CartContext>{children}</CartContext>;
+  return <CartContext value={cartInfo}>{children}</CartContext>;
 };
 
 export default CartProvider;
