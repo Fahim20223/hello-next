@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CardButton from "../buttons/CardButton";
 
 const FoodCard = ({ food }) => {
   //onAddToCart, onViewDetails
@@ -21,12 +22,7 @@ const FoodCard = ({ food }) => {
 
         {/* Buttons */}
         <div className="flex gap-3 mt-4">
-          <button
-            // onClick={() => onAddToCart(food)}
-            className="flex-1 bg-green-600 text-white py-2 rounded-lg text-sm font-medium hover:bg-green-700 transition"
-          >
-            Add to Cart
-          </button>
+          <CardButton></CardButton>
 
           <Link
             href={`/foods/${food.id}`}
